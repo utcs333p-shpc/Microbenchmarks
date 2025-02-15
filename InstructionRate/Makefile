@@ -1,11 +1,12 @@
 include ../Common/arch_detect.mk
 
-CFLAGS = -O3
+CFLAGS = -O3 -pthread
+
 
 all: $(TARGET)
 
 amd64:
-	$(CC) $(CFLAGS) x86_instructionrate.s x86_instructionrate.c -o InstructionRate_amd64 $(LDFLAGS)
+	$(CC) $(CFLAGS) x86_instructionrate.s x86_instructionrate_gemm.c -o InstructionRate_amd64 $(LDFLAGS)
 
 aarch64:
 	$(CC) $(CFLAGS) -march=native -pthread arm_instructionrate.s arm_instructionrate.c -o InstructionRate_aarch64 $(LDFLAGS)

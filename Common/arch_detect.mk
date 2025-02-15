@@ -19,8 +19,8 @@ else
     endif
 endif
 
-amd64: CC = x86_64-linux-gnu-gcc
-amd64_numa: CC = x86_64-linux-gnu-gcc
+amd64: CC = gcc 
+amd64_numa: CC = gcc 
 aarch64: CC := gcc
 aarch64_numa: CC = aarch64-linux-gnu-gcc
 riscv64: CC = riscv64-linux-gnu-gcc

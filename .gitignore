@@ -15,6 +15,14 @@
 MemoryBandwidth/membw_*
 MemoryLatency/MemoryLatency
 
+# Executables
+CoreClockChecker/CoreClockChecker_amd64
+CoreClockChecker/BoostClockChecker_amd64
+InstructionRate/InstructionRate_amd64
+MemoryBandwidth/MemoryBandwidth_amd64
+MemoryLatency/MemoryLatency_amd64
+mt_instructionrate/x86_mt_instructionrate
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
